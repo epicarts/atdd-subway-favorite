@@ -70,6 +70,7 @@ public class AuthConfig implements WebMvcConfigurer {
         return new TokenSuccessHandler(jwtTokenProvider);
     }
 
+    @Bean
     AuthenticationSuccessHandler defaultSuccessHandler() {
         return new DefaultSuccessHandler();
     }
